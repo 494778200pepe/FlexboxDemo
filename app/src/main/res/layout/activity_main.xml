@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.zitech.flexboxdemo.MainActivity">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:flexDirection="row">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="第一个" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="从左到右"
+            android:background="@drawable/btn_common_normal"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="CCC" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="DDD" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="EEE" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="FFF" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="GGG" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="HHH" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="III" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="JJJ" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="KKK" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="第二个" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="正常换行"
+            android:background="@drawable/btn_common_normal"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="CCC" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="DDD" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="EEE" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="FFF" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="GGG" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="HHH" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="III" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="JJJ" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="KKK" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="第二个" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="错误测试"
+            android:background="@drawable/btn_common_normal"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="item高度大于Layout高度" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="DDD" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="EEE" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="FFF" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="GGG" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="HHH" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="III" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="JJJ" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="KKK" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:flexDirection="row"
+        app:flexWrap="wrap_reverse">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="第三个" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="反方向换行"
+            android:background="@drawable/btn_common_normal"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="高度正常" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="DDD" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="EEE" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="FFF" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="GGG" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="HHH" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="III" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="JJJ" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="KKK" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:flexDirection="row"
+        app:flexWrap="wrap_reverse">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="第三个" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="错误测试"
+            android:background="@drawable/btn_common_normal"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="高度不正常" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="动态计算" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="第一行正常" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_common_normal"
+            android:gravity="center"
+            android:text="第二行不正常" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="GGG" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="HHH" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="III" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="JJJ" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="KKK" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:flexDirection="row_reverse">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="第四个" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="反方向"
+            android:background="@drawable/btn_common_normal"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="CCC" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="DDD" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="EEE" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="FFF" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="GGG" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="HHH" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="III" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="JJJ" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="KKK" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        app:flexDirection="row_reverse">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="第五个" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="BBB"
+            android:background="@drawable/btn_common_normal"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="CCC" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="DDD" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="EEE" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="FFF" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="GGG" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="HHH" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="III" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="JJJ" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="KKK" />
+
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:flexDirection="column">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="AAA" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="BBB"
+            android:background="@drawable/btn_common_normal"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="CCC" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="DDD" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="EEE" />
+
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:flexDirection="column_reverse">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="AAA" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="BBB"
+            android:background="@drawable/btn_common_normal"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="CCC" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="DDD" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="EEE" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="FFF" />
+
+
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>
