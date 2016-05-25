@@ -658,35 +658,36 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="10dp"
-            app:flexDirection="column">
+            app:flexDirection="row"
+            app:alignItems="flex_start">
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="90dp"
                 android:background="@drawable/btn_common_normal"
-                android:text="AAA" />
+                android:text="第六个" />
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="20dp"
                 android:background="@drawable/btn_common_normal"
-                android:text="BBB" />
+                android:text="alignItems" />
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:background="@drawable/btn_common_normal"
-                android:text="CCC" />
+                android:text="flex_start" />
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="40dp"
                 android:background="@drawable/btn_common_normal"
                 android:text="DDD" />
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="70dp"
                 android:background="@drawable/btn_common_normal"
                 android:text="EEE" />
 
@@ -703,44 +704,236 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginTop="10dp"
-            app:flexDirection="column_reverse">
+            app:flexDirection="row"
+            app:alignItems="flex_end">
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="90dp"
                 android:background="@drawable/btn_common_normal"
-                android:text="AAA" />
+                android:text="第七个" />
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="20dp"
                 android:background="@drawable/btn_common_normal"
-                android:text="BBB" />
+                android:text="alignItems" />
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:background="@drawable/btn_common_normal"
-                android:text="CCC" />
+                android:text="flex_end" />
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="40dp"
                 android:background="@drawable/btn_common_normal"
                 android:text="DDD" />
 
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="70dp"
                 android:background="@drawable/btn_common_normal"
                 android:text="EEE" />
 
+
+        </com.google.android.flexbox.FlexboxLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:flexDirection="row"
+            app:alignItems="center">
+
             <TextView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:text="FFF" />
+                android:layout_height="90dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="第八个" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="alignItems" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="center" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="DDD" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="EEE" />
 
 
         </com.google.android.flexbox.FlexboxLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:flexDirection="row"
+            app:alignItems="baseline">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="第九个"
+                android:paddingTop="30dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="alignItems"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="baseline"
+                android:textSize="2dp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="DDD"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="EEE" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:flexDirection="row"
+            app:alignItems="stretch">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="第十个" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="alignItems" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="stretch" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="DDD" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="EEE" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            app:flexDirection="row"
+            app:justifyContent="flex_start"
+            app:alignItems="flex_start"
+            app:alignContent="center">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="90dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="十一"
+            android:paddingTop="30dp"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="alignItems"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="baseline"
+            android:textSize="2dp"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="DDD"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="EEE" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+
     </LinearLayout>
 </ScrollView>
