@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50px"
+    android:layout_marginRight="118px"
+    android:layout_marginBottom="20px"
+    android:layout_marginTop="20px"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="原装：6个100，默认flexGrow=0"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        >
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="a\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="b\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="c\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="d\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="e\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="f\n100px" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="layout_flexGrow:如何分配剩余空间\n如果所有项目的 layout_flexGrow  属性都为1，则它们将等分剩余空间（如果有的话）。\n如果一个项目的 layout_flexGrow  属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        app:flexDirection="row">
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            app:layout_flexGrow="3"
+            android:text="a,flexGrow=3\n100px\n600-200=400，剩余的400，a占3/4，b占1/4" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            app:layout_flexGrow="1"
+            android:text="b,flexGrow=1\n100px" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark" />
+
+
+</LinearLayout>

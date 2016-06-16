@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50px"
+    android:layout_marginRight="118px"
+    android:layout_marginBottom="20px"
+    android:layout_marginTop="20px"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="原装：6个100，默认flexDirection=row"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        >
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="a\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="b\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="c\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="d\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="e\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="f\n100px" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="item总宽度小于屏幕宽度"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        app:flexDirection="row">
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="a\n200px" />
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="b\n200px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="c\n100px" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="item总宽度大于屏幕宽度，并非按比率平分"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        app:flexDirection="row">
+
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="a\n300px" />
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="b\n300px" />
+        <TextView
+            android:layout_width="600px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="c\n600px" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="高度不一致:全部取最大高度"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        app:flexDirection="row">
+
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="10dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="a\n300px" />
+        <TextView
+            android:layout_width="300px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="b\n300px" />
+        <TextView
+            android:layout_width="600px"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="c\n600px" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="结论(测试主轴为水平)：\n 1、不自动换行\n 2、宽度不会自动填满屏幕宽度 \n 3、如果超过屏幕宽度，按一定比率重排(非标准比率) \n 4、高度统一为最大高度"/>
+</LinearLayout>

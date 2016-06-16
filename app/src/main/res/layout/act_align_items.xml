@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20px"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="118px"
+        android:layout_marginTop="20px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="原装：3个100,默认alignItems=stretch"/>
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            >
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="a\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="b\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="c\n100px" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从副轴的起点对齐\nalignItems=flex_start"/>
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            app:alignItems="flex_start">
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="a\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="b\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="c\n100px" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从副轴的终点对齐\nalignItems=flex_end"/>
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            app:alignItems="flex_end">
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="a\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="b\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="c\n100px" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从副轴的中心对齐\nalignItems=center"/>
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            app:alignItems="center">
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="a\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="b\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="c\n100px" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="item的第一行文字的基线对齐\nalignItems=baseline\n这里的高度要设置固定值(match_parent或者100dp)，否则只会显示第一行文字距离控件顶部的高度"/>
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@android:color/holo_green_light"
+            app:alignItems="baseline">
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/btn_common_normal"
+                android:text="a\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="b\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="c\n100px" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="如果flexbox的高度为wrap_content，取item的最大高度填充\n如果flexbox为固定高度，则填充固定高度\nalignItems=stretch"/>
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            app:alignItems="stretch">
+
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/btn_common_normal"
+                android:text="a\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="70dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="b\n100px" />
+            <TextView
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_common_normal"
+                android:text="c\n100px" />
+
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_dark" />
+    </LinearLayout>
+</ScrollView>

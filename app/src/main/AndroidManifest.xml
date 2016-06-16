@@ -15,6 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FlexDirectionAct"/>
+        <activity android:name=".FlexWrapAct"/>
+        <activity android:name=".JustifyContentAct"/>
+        <activity android:name=".AlignItemsAct"/>
+        <activity android:name=".AlignContentAct"/>
+        <activity android:name=".LayoutOrderAct"/>
+        <activity android:name=".LayoutFlexGrowAct"/>
+        <activity android:name=".LayoutFlexShrinkAct"/>
+        <activity android:name=".LayoutAlignSelfAct"/>
     </application>
 
 </manifest>

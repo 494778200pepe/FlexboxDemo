@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50px"
+    android:layout_marginRight="118px"
+    android:layout_marginBottom="20px"
+    android:layout_marginTop="20px"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="原装：6个100，默认alignSelf=auto"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        >
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="a\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="b\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="c\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="d\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="e\n100px" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            android:text="f\n100px" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="layout_alignSelf:允许单个子元素有与其他子元素不一样的对齐方式，可覆盖 alignItems 属性。\n默认值为auto，表示继承父元素的 alignItems 属性，如果没有父元素，则等同于stretch。"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        app:flexDirection="row">
+
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="100dp"
+            android:background="@drawable/btn_common_normal"
+            app:layout_alignSelf="flex_start"
+            android:text="a,alignSelf=flex_start" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            app:layout_alignSelf="flex_end"
+            android:text="b,alignSelf=flex_end" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            app:layout_alignSelf="center"
+            android:text="c,alignSelf=center" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            app:layout_alignSelf="baseline"
+            android:text="d,alignSelf=baseline" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            app:layout_alignSelf="stretch"
+            android:text="e,alignSelf=stretch" />
+        <TextView
+            android:layout_width="100px"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_common_normal"
+            app:layout_alignSelf="auto"
+            android:text="e,alignSelf=auto" />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_dark" />
+
+</LinearLayout>
